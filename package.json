@@ -1,0 +1,38 @@
+{
+  "name": "swirl-example",
+  "version": "0.0.1",
+  "private": true,
+  "description": "An example of the Swirl architecture",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "scripts": {
+    "start": "./dev_server.sh"
+  },
+  "author": "Lauri Lehmijoki",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "4.0.2",
+    "baconjs": "0.7.52",
+    "browserify": "8.1.1",
+    "compression": "1.3.0",
+    "express": "4.11.1",
+    "lodash": "3.5.0",
+    "node-sass": "2.0.1",
+    "react": "0.13.0",
+    "reactify": "1.0.0",
+    "socket.io": "1.3.2",
+    "socket.io-client": "1.3.2"
+  },
+  "devDependencies": {
+    "babelify": "5.0.4",
+    "nodemon": "1.3.6",
+    "supervisor": "0.6.0",
+    "watchify": "2.2.1"
+  }
+}

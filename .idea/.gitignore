@@ -1,0 +1,4 @@
+*.xml
+!codeStyleSettings.xml
+.name
+scopes
