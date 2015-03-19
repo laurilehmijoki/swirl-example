@@ -8,11 +8,11 @@ module.exports = React.createClass({
   },
   render: function() {
     return (
-      <div>
+      <div className="userNameInput">
         <h1>Welcome!</h1>
         <p>Start by entering your name</p>
         <form onSubmit={this.handleFormSubmit}>
-          <input type="text" ref="username" placeholder="Name" />
+          <input className="userNameInput__input" type="text" ref="username" placeholder="Name" />
           <button type="submit">Start chat</button>
         </form>
       </div>
