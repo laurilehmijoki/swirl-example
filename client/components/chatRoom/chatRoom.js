@@ -26,6 +26,7 @@ var User = React.createClass({
         <form onSubmit={this.sendMessage}>
           <input
             value={this.state.messageToUser}
+            className="chatRoom__messageInput"
             onChange={evt => this.setState({messageToUser: evt.target.value})}
             placeholder={`Send message to ${this.props.userName}`} />
         </form>
@@ -43,7 +44,7 @@ var findMessages = (userMessages, userName, anotherUserName) =>
 module.exports = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="chatRoom">
         <h2>Online users</h2>
         <ul>
         {
