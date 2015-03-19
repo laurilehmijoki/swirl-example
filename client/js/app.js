@@ -10,7 +10,7 @@ var applicationStateStream = Bacon.combineTemplate({
     onlineUsers.filter(userName => userName != myUserName)
   ).startWith([]),
   userMessages: userMessages.startWith([])
-}).log()
+})
 
 var App = React.createClass({
   getInitialState: function() { return {} },
